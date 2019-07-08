@@ -27,17 +27,17 @@ html, body {
 /* fonts */
 @font-face {
     font-family: ProductSansRegular;
-    src: url(fonts/Product_Sans_Regular.ttf);
+    src: url(../../fonts/Product_Sans_Regular.ttf);
 }
 
 @font-face {
     font-family: ProductSansBold;
-    src: url(fonts/Product_Sans_Bold.ttf);
+    src: url(../../fonts/Product_Sans_Bold.ttf);
 }
 
 @font-face {
     font-family: GeoSansLight;
-    src: url(fonts/GeosansLight.ttf);
+    src: url(../../fonts/GeosansLight.ttf);
 }
 
 iframe {

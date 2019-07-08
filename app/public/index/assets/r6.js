@@ -27,7 +27,6 @@ document.onkeydown = function( e ) { if ( e.keyCode == 13 ) { retrieveR6Stats() 
 
 
 function retrieveR6Stats() {
-
   let username = r6Input.value;
   if ( username.trim() == '' ) {
     return Swal.fire( {
@@ -57,6 +56,5 @@ function retrieveR6Stats() {
 
   r6form.classList.add( 'hide' )
   loadingDiv.classList.remove( 'hide' )
-
   window.location.href = `http://localhost:5000/stats/r6/${platform}/${username}`
 }
