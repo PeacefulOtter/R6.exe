@@ -1,0 +1,136 @@
+.form-title {
+    line-height: 10px;
+}
+
+#r6-desc {
+  line-height: 0px;
+  margin-bottom: 50px;
+}
+
+.form .footer {
+  margin-top: 20px;
+}
+
+.form {
+  margin-left: 50px;
+}
+
+.form-content {
+
+}
+
+.form-input {
+  position: relative;
+  width: 300px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  font-family: GeoSansLight;
+  font-size: 2em;
+  border-radius: 20px;
+  border: 2px solid var(--highlight);
+  color: var(--mintext);
+  background-color: var(--background);
+  background-clip: padding-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-input:focus {
+  background-color: var(--dashboard);
+}
+
+
+.radio-form > input {
+  visibility: hidden;
+}
+
+.radio-form > input + img {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--highlight);
+  border-radius: 60px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.radio-form > input:hover + img {
+  cursor: pointer;
+  background-color: var(--highlight2);
+  border-color: var(--highlight2);
+  animation: shake 0.8s forwards;
+}
+
+
+.radio-form > input:checked + img {
+  background: var(--highlight2);
+  border-color: var(--highlight2);
+}
+
+
+.form-pictures {
+  margin-left: -25px;
+  margin-top: -20px;
+}
+
+
+.form-btn {
+  width: 210px;
+  height: 70px;
+  margin-left: 25vw;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px solid var(--highlight);
+  border-radius: 60px;
+  line-height: 51px;
+  font-family: ProductSansRegular;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: var(--dashboard);
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.form-btn img {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+  margin-right: 10px;
+  margin-left: 0px;
+  transition: margin-left 0.3s ease-in-out;
+  vertical-align: middle;
+  z-index: 5;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background-color: var(--dashboard);
+  border-color: var(--highlight2);
+}
+
+.form-btn:hover img {
+  margin-left: 80px;
+}
+
+
+/* loading screen */
+.form-loading {
+  width: 100%;
+  height: 100%;
+}
+
+.form-loading img {
+  position: absolute;
+  left: 46%;
+  top: 60%;
+  width: 4vw;
+  height: 4vw;
+  padding: 1vw;
+  border-radius: 60px;
+  border: 2px solid var(--dashboard);
+  animation: looping 1.5s infinite;
+}
+
+@keyframes looping {
+  100% { transform: rotate(360deg); }
+}

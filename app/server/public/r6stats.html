@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/master.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  </head>
+  <body>
+    <div class="background"></div>
+
+
+    <!-- TOP TAB -->
+    <div class="top-tab">
+      <img src="" alt="avatar link" id="avatar">
+      <div class="center-tab">
+        <h1 class="title highlighted" id="username">Username</h1>
+        <div class="tab-block">
+          <h2 class="level">Level <span class="highlighted" id="level">86</span></h2>
+          <h4 class="xp"><span id="xp"></span> xp</h4>
+        </div>
+        <div class="tab-block">
+          <h3 class="last-connection">Last Connection at : <span id="last-seen"></span></h3>
+          <h3 class="last-update">Last Update at : <span id=last-update></span></h3>
+        </div>
+      </div>
+      <img src="" alt="platform image" id="platform">
+    </div>
+
+
+    <!-- GENERAL STATS -->
+    <div class="general wrapper">
+      <div class="sizer small-size">
+        <div class="container gen-container">
+          <h3>Kills :     <span id="kills"></span>    </h3>
+          <h3>Deaths :    <span id="deaths"></span>   </h3>
+          <h3>Ratio K/D : <span id="kd"></span>       </h3>
+          <h3>Headshots : <span id="hs"></span>       </h3>
+          <h3>Melee :     <span id="melee"></span>    </h3>
+          <h3>Assists :   <span id="assists"></span>  </h3>
+          <h3>Revives :   <span id="res"></span>      </h3>
+          <h3>Suicides :  <span id="suicides"></span> </h3>
+        </div>
+
+        <div class="container gen-container">
+          <h3>Games Played : <span id="games-played"></span> </h3>
+          <h3>Wins :         <span id="wins"></span>         </h3>
+          <h3>Losses :       <span id="losses"></span>       </h3>
+          <h3>Ratio W/L:     <span id="wl"></span>           </h3>
+          <h3>Draws :        <span id="draws"></span>        </h3>
+          <h3>Playtime :     <span id="playtime"></span>     </h3>
+        </div>
+
+        <div class="container gen-container">
+          <h3>Bullets Fired :     <span id="b-fired"></span>   </h3>
+          <h3>Bullets Hit :       <span id="b-hit"></span>     </h3>
+          <h3>Aim :               <span id="aim"></span>       </h3>
+          <h3>Barric. Deployed :  <span id="b-deploy"></span>  </h3>
+          <h3>Reinfo. Deployed :  <span id="r-deploy"></span>  </h3>
+          <h3>Gadgets Destroyed : <span id="g-destroy"></span> </h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CASUAL and RANKED STATS -->
+    <div class="wrapper">
+      <div class="sizer big-size">
+
+          <h1>CASUAL</h1>
+          <div class="container casu-rank-container">
+            <h3>Kills :        <span id="casu-kills"></span>    </h3>
+            <h3>Deaths :       <span id="casu-deaths"></span>   </h3>
+            <h3>Ratio K/D :    <span id="casu-kd"></span>       </h3>
+            <h3>Playtime :     <span id="casu-playtime"></span> </h3>
+          </div>
+          <div class="container casu-rank-container">
+            <h3>Matches : <span id="casu-matches"></span>       </h3>
+            <h3>Wins :         <span id="casu-wins"></span>     </h3>
+            <h3>Losses :       <span id="casu-losses"></span>   </h3>
+            <h3>Ratio W/L :    <span id="casu-wl"></span>       </h3>
+          </div>
+
+          <h1>RANKED</h1>
+          <div class="container casu-rank-container">
+            <h3>Kills :        <span id="rank-kills"></span>    </h3>
+            <h3>Deaths :       <span id="rank-deaths"></span>   </h3>
+            <h3>Ratio K/D :    <span id="rank-kd"></span>       </h3>
+            <h3>Playtime :     <span id="rank-playtime"></span> </h3>
+          </div>
+          <div class="container casu-rank-container">
+            <h3>Matches : <span id="rank-matches"></span>       </h3>
+            <h3>Wins :         <span id="rank-wins"></span>     </h3>
+            <h3>Losses :       <span id="rank-losses"></span>   </h3>
+            <h3>Ratio W/L :    <span id="rank-wl"></span>       </h3>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="/handler.js" type="text/javascript"></script>
+  </body>
+</html>

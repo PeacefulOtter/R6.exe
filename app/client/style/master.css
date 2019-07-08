@@ -1,0 +1,171 @@
+:root {
+  --background: #434549;
+  --dashboard:  #2b2d30;
+  --highlight:  #6c0dc4;
+  --highlight2: #14b9df;
+  --mintext:    #777;
+  --test:       #888;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--background);
+  -webkit-text-size-adjust: none;
+  text-decoration: none;
+}
+
+/* remove border when clicking on element */
+*:focus {
+  outline: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+/* fonts */
+@font-face {
+    font-family: ProductSansRegular;
+    src: url(fonts/Product_Sans_Regular.ttf);
+}
+
+@font-face {
+    font-family: ProductSansBold;
+    src: url(fonts/Product_Sans_Bold.ttf);
+}
+
+@font-face {
+    font-family: GeoSansLight;
+    src: url(fonts/GeosansLight.ttf);
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 53vw;
+  width: 15vw;
+  height: 70vh;
+}
+
+
+.hide {
+  display: none;
+  height: 0;
+}
+
+
+.slideDisappearRight {
+  margin-left: 80vw !important;
+}
+
+
+.container {
+  display: inline-block;
+  width: 130vw;
+  height: 100vh;
+  margin-left: 20vw;
+}
+
+.wrapper {
+  position: absolute;
+  width: 65vw;
+  height: 70vh;
+  margin-top: 14vh;
+  margin-left: 10vw;
+  padding-top: 2vh;
+  padding-left: 90px;
+  border-left: 5px solid;
+  border-image-source: linear-gradient(180deg, rgba(20,185,223,1) 0%, rgba(108,13,196,1) 100%);
+  border-image-slice: 1;
+  background-color: var(--background);
+  overflow: hidden;
+  transition: margin-left 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.title {
+  font-family: ProductSansBold;
+  font-size: 8em;
+  color: var(--dashboard);
+  line-height: 50px;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: var(--highlight);
+}
+
+.description {
+  width: 55vw;
+  font-family: ProductSansRegular;
+  font-size: 4em;
+  color: var(--mintext);
+  line-height: 60px;
+}
+
+.highlight {
+  color: var(--dashboard);
+}
+
+.footer {
+  font-family: GeoSansLight;
+  font-size: 2em;
+  color: var(--mintext);
+  margin-top: -15px;
+}
+
+.github-link {
+  border-bottom: 1px dashed;
+  border-bottom-color: inherit;
+}
+
+.github-link:hover {
+  cursor: pointer;
+  border-bottom-style: solid;
+}
+
+.pictures {
+  width: 500px;
+}
+
+.images {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--highlight);
+  border-radius: 60px;
+  margin-right: 30px;
+  background-color: var(--background);
+}
+
+.pseudo-elt-shadow {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  margin-left: -136px;
+  margin-right: 28px;
+  -webkit-box-shadow: 9px 9px 0px 2px var(--dashboard);
+          box-shadow: 9px 9px 0px 2px var(--dashboard);
+}
+
+.images:hover {
+  animation: shake 0.8s forwards;
+}
+
+@keyframes shake {
+  0%   { transform: rotate(0deg) }
+  15%  { transform: rotate(20deg) }
+  35%  { transform: rotate(-35deg) }
+  70%  { transform: rotate(20deg) }
+  100% { transform: rotate(0deg) }
+}
+
+.img-link:hover div {
+  animation: washoff 0.3s forwards;
+}
+
+@keyframes washoff {
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px var(--dashboard);
+            box-shadow: 0px 0px 0px 0px var(--dashboard);
+  }
+}

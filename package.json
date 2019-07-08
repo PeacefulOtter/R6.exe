@@ -1,0 +1,32 @@
+{
+  "name": "r6exe website & bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "chalk": "^2.4.1",
+    "cloudinary": "^1.11.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "discord.js": "^11.5.1",
+    "enmap": "^2.6.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "npm": "^6.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "r6",
+    "bot",
+    "stats",
+    "statistics",
+    "discord",
+    "bot"
+  ],
+  "author": "Nathan Maire",
+  "license": "MIT"
+}

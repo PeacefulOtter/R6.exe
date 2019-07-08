@@ -1,0 +1,16 @@
+
+
+{
+  "token" : "NDUyODk2MjgzNTE5MjIxNzYx.DfXADg.BeWFz6E_0C14VcbifPLToGk9nuw",
+  "id" : "452896283519221761",
+  "owner" : "304530498112192513",
+  "prefix" : "&&",
+  "permissions" : "8",
+
+  "r6_api_url" : "https://api2.r6stats.com/public-api/stats",
+  "r6_api_key" : "018a934c-738d-4211-ab9a-08829dbacd18",
+
+  "cloudinary_cloud_name": "genjy",
+  "cloudinary_api_key": "257791994854424",
+  "cloudinary_api_secret": "oymdWRi_g-hOvOTjWLshw4VKPeY"
+}

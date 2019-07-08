@@ -1,0 +1,125 @@
+.dashboard {
+  position: fixed;
+  width: 20vw;
+  height: 100vh;
+  top:0;
+  background: var(--dashboard);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  width: 16vw;
+  margin: auto;
+  padding: 1vw;
+  margin-top: 50px;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+}
+
+.tab hr {
+  transition: width 0.4s ease-in-out;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.tab:hover hr {
+  width: 16vw;
+  /* this is a bad idea */
+  -webkit-box-shadow: 0px -50px 5px 0px rgba(0,0,0,0.5),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+     -moz-box-shadow: 0px -50px 5px 0px rgba(0,0,0,0.5),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+          box-shadow: 0px -4px 5px 0px rgba(30,30,30,1),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+}
+
+
+
+
+.tabwrapper {
+  display: flex;
+  width: fit-content;
+  height: 60px;
+  margin: auto;
+}
+
+.tabimg {
+  width: 60px;
+  height: 60px;
+}
+
+.tabtext {
+  width: min-content;
+  margin-left: 15px;
+  font-family: GeoSansLight;
+  font-size: 60px;
+  color: var(--mintext);
+  line-height: 60px;
+}
+
+.underline {
+  width: 0vw;
+  height: 4px;
+  margin: auto;
+  margin-top: 20px;
+  color: linear-gradient(90deg, rgba(20,185,223,1) 0%, rgba(108,13,196,1) 100%);
+  background: linear-gradient(90deg, rgba(20,185,223,1) 0%, rgba(108,13,196,1) 100%);
+  border: none;
+  z-index: -1;
+}
+
+.selected-menu hr {
+  width: 16vw;
+  /* this is a bad idea */
+  -webkit-box-shadow: 0px -50px 5px 0px rgba(0,0,0,0.5),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+     -moz-box-shadow: 0px -50px 5px 0px rgba(0,0,0,0.5),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+          box-shadow: 0px -4px 5px 0px rgba(30,30,30,1),
+          0px -11px 6px 0px rgba(30,30,30,0.9),
+          0px -18px 6px 0px rgba(30,30,30,0.8),
+          0px -25px 6px 0px rgba(30,30,30,0.7),
+          0px -32px 6px 0px rgba(30,30,30,0.6),
+          0px -39px 6px 0px rgba(30,30,30,0.5),
+          0px -46px 6px 0px rgba(30,30,30,0.4),
+          0px -53px 6px 0px rgba(30,30,30,0.3),
+          0px -60px 6px 0px rgba(30,30,30,0.2);
+}

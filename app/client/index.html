@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>echo</title>
+    <!--<link rel="shortcut icon" href="img/" />-->
+		<link rel="stylesheet" type="text/css" href="./style/master.css">
+    <link rel="stylesheet" type="text/css" href="./style/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="./style/form.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+	</head>
+
+  <body>
+    <div class="dashboard">
+      <a class="tab selected-menu" href="#0">
+          <div class="tabwrapper">
+            <img class="tabimg" src="./img/dashboard/home.png" alt="home img">
+            <div class="tabtext">home</div>
+          </div>
+          <hr class="underline">
+      </a>
+      <a class="tab" href="#1">
+        <div class="tabwrapper">
+          <img class="tabimg" src="./img/dashboard/r6.png" alt="r6 img">
+          <div class="tabtext">r6.exe</div>
+        </div>
+        <hr class="underline">
+      </a>
+      <a class="tab" href="#2">
+        <div class="tabwrapper">
+          <img class="tabimg" src="./img/dashboard/fortnite.png" alt="fortnite img">
+          <div class="tabtext">fort.exe</div>
+        </div>
+        <hr class="underline">
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="wrapper" name="home Layer" style="z-index: 3;">
+        <h1 class="title" id="scramble"></h1>
+        <h2 class="description">An <span class="highlight">easy-to-use</span> and <span class="highlight">neat</span> website to exposure my <span class="highlight">work</span></h2>
+        <h3 class="footer">made by <a class="github-link">@PeacefulOtter</a></h3>
+        <div class="pictures">
+          <a class="img-link" href="https://discord.gg/AJkr9n5">
+            <img class="images" src="./img/main/discord2.png" alt="discord logo">
+            <div class="pseudo-elt-shadow"></div>
+          </a>
+          <a class="img-link" href="https://github.com/PeacefulOtter/">
+            <img class="images" src="./img/main/github2.png" alt="github logo">
+            <div class="pseudo-elt-shadow"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="wrapper" name="r6.exe Layer" style="z-index: 2;">
+        <h1 class="title form-title">R6.exe</h1>
+        <h2 class="description" id="r6-desc"><span class="highlight">Browse</span> Rainbow Six Siege <span class="highlight">Stats</span></h2>
+
+        <div class="form">
+          <div class="form-content" id="r6-form">
+            <h3 class="footer">Enter your <span class="highlight">Username</span></h3>
+            <input class="form-input" id="r6-input" type="text" name="username-input" placeholder="Username..">
+            <h3 class="footer">And select the <span class="highlight">Platform</span> you are playing on</h3>
+            <div class="pictures form-pictures">
+              <label class="radio-form">
+                <input class="radio-input" type="radio" name="platform-input" value="uplay">
+                <img class="form-img" src="./img/main/apple2.png" alt="computer image">
+              </label>
+              <label class="radio-form">
+                <input class="radio-input"  type="radio" name="platform-input" value="ps4">
+                <img class="form-img" src="./img/main/playstation2.png" alt="playstation image">
+              </label>
+              <label class="radio-form">
+                <input class="radio-input"  type="radio" name="platform-input" value="xone">
+                <img class="form-img" src="./img/main/xbox2.png" alt="xbox image">
+              </label>
+            </div>
+            <button onclick="retrieveR6Stats()" class="form-btn" id="r6-btn" type="button" name="send-form">
+              <img src="./img/main/magglass.png" alt="magnifying glass">SEARCH</button>
+          </div>
+
+          <iframe src="https://discordapp.com/widget?id=458662139381678084&theme=dark" allowtransparency="true" frameborder="0"></iframe>
+
+          <div class="form-loading hide" id="loading">
+              <img src="./img/main/magglass.png" alt="loading image">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="wrapper" name="fort.exe Layer" style="z-index: 1;">
+        <h3 class="footer">made by <a class="github-link"><b>@PeacefulOtter</b></a></h3>
+      </div>
+    </div>
+
+    <!-- Import the javascript files -->
+    <script src="assets/textScrambler.js"   type="text/javascript"></script>
+    <script src="assets/titleScrambler.js"  type="text/javascript"></script>
+    <script src="assets/r6.js"              type="text/javascript"></script>
+    <script src="assets/layers.js"          type="text/javascript"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </body>
+</html>
